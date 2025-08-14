@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Actualización Aspel SAE | Consultoría GIMEX</title>
+  <meta name="description" content="Actualiza tu Aspel SAE y optimiza tu operación con soporte experto, implementación y timbrado. Cotiza en minutos con nuestro formulario guiado." />
+  <meta name="theme-color" content="#F77014" />
+  <meta property="og:title" content="Actualización Aspel SAE | Consultoría GIMEX" />
+  <meta property="og:description" content="Cotiza tu actualización, agrega servicios de soporte e implementación y recibe asesoría especializada." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_MX" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --brand-1:#F77014; /* GIMEX orange */
+      --brand-1b:#F37C41; /* secondary orange */
+      --bg:#FAFAFA;
+      --ink:#1a1a1a; /* original */
+      --muted:#6B7280;
+      --card:#FFFFFF;
+      --line:#ECE6E1; /* original palette */
+      --radius:18px;
+      --shadow:0 10px 30px rgba(0,0,0,.06);
+      --focus:#11182733; /* subtle focus ring */
+    }
+
+    /* Base */
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+    body{margin:0;font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--ink);background:var(--bg);-webkit-text-size-adjust:100%}
+    a{color:var(--brand-1);text-decoration:none}
+    a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:12px}
+
+    /* Layout */
+    .container{width:min(1120px,92vw);margin-inline:auto}
+    .section{padding:clamp(40px,6vw,80px) 0}
+
+    /* Topbar */
+    .topbar{background:#111;color:#fff;font-size:.92rem}
+    .topbar .container{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:.55rem 0;flex-wrap:wrap}
+    .mini{display:flex;gap:18px;flex-wrap:wrap;align-items:center}
+
+    /* Buttons */
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.85rem 1.1rem;border-radius:12px;border:1px solid transparent;font-weight:600;cursor:pointer;line-height:1}
+    .btn.primary{background:var(--brand-1);color:#fff;box-shadow:0 8px 18px rgba(247,112,20,.25)}
+    .btn.primary:hover{filter:brightness(.97)}
+    .btn.ghost{background:transparent;border-color:var(--line);color:var(--ink)}
+    .btn.block{width:100%}
+
+    .badge{display:inline-block;padding:.35rem .6rem;border-radius:999px;background:rgba(247,112,20,.12);color:var(--brand-1);font-weight:600;font-size:.82rem}
+
+    /* Header / Nav */
+    header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.9);backdrop-filter:saturate(150%) blur(10px);border-bottom:1px solid var(--line)}
+    nav{display:flex;align-items:center;justify-content:space-between;padding:.7rem 0;gap:12px}
+    .brand{display:flex;gap:.6rem;align-items:center;min-width:0}
+    .brand img{width:40px;height:40px;border-radius:10px;border:1px solid var(--line);flex:0 0 auto}
+    .brand strong{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+    /* Desktop nav actions */
+    .nav-actions{display:flex;gap:.6rem;align-items:center}
+
+    /* Mobile nav */
+    .nav-toggle{display:none;border:1px solid var(--line);background:#fff;border-radius:10px;padding:.5rem .65rem}
+    .nav-panel{display:none}
+
+    /* Hero */
+    .hero{padding:clamp(40px,6vw,84px) 0;background:linear-gradient(180deg,#fff,rgba(243,124,65,.05))}
+    .hero-wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}
+
+    .title{font-size:clamp(24px,3.2vw,40px);line-height:1.1;margin:0 0 12px}
+    .subtitle{font-size:clamp(15px,1.6vw,18px);color:var(--muted);margin:0 0 22px}
+
+    .kpis{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    .kpi{padding:.55rem .8rem;border:1px dashed var(--line);border-radius:12px;color:var(--muted);font-weight:500}
+
+    .media-card{background:#fff;min-height:260px;border-radius:var(--radius);box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center;padding:18px}
+    .media-card img{max-width:100%;height:auto;border-radius:12px}
+
+    /* Cards */
+    .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}
+    .card h3{margin:.2rem 0 .4rem;font-size:1.05rem}
+    .muted{color:var(--muted)}
+
+    /* Two-col content */
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:center}
+
+    .list{display:grid;gap:10px;padding-left:0;margin:0;list-style:none}
+    .list li{display:flex;gap:10px;align-items:flex-start}
+    .list li svg{flex:0 0 auto;margin-top:3px}
+
+    /* Pricing */
+    .pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .price-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow);display:flex;flex-direction:column}
+    .price{font-size:32px;font-weight:700}
+    .price small{font-size:14px;color:var(--muted)}
+    .pc-body{flex:1}
+
+    /* Wizard */
+    #cotizar{scroll-margin-top:90px}
+    .wizard{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+    .steps{display:flex;gap:8px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding:10px}
+    .step{padding:.5rem .8rem;border-radius:999px;border:1px solid var(--line);font-weight:600;color:var(--muted);display:flex;gap:.5rem;align-items:center}
+    .step.active{background:var(--brand-1);border-color:var(--brand-1);color:#fff}
+    .pane{display:none;padding:20px}
+    .pane.active{display:block}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    label{font-weight:600;margin-bottom:6px;display:block}
+    input,select,textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:12px;font-family:inherit;font-size:1rem;background:#fff}
+    textarea{min-height:120px}
+    .form-actions{display:flex;justify-content:space-between;gap:10px;margin-top:14px}
+
+    /* Footer */
+    footer{background:#0f172a;color:#e5e7eb}
+    footer a{color:#e5e7eb;text-decoration:underline}
+
+    /* Utilities */
+    .hide{display:none}
+    .shadow{box-shadow:var(--shadow)}
+    .rounded{border-radius:var(--radius)}
+    .center{display:flex;align-items:center;justify-content:center}
+
+    /* RESPONSIVE BREAKPOINTS */
+    @media (max-width:1200px){
+      .cards{grid-template-columns:repeat(3,1fr)}
+    }
+
+    @media (max-width:980px){
+      /* Mobile nav */
+      .nav-toggle{display:inline-flex}
+      .nav-actions{display:none}
+      .nav-panel{display:none;position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);box-shadow:var(--shadow)}
+      .nav-panel .container{display:grid;gap:8px;padding:12px 0}
+      .nav-panel a{padding:.8rem 1rem;border-bottom:1px solid var(--line)}
+      .nav-panel a:last-child{border-bottom:0}
+
+      .hero-wrap,.grid-2{grid-template-columns:1fr}
+      .media-card{order:-1}
+      .form-row{grid-template-columns:1fr}
+      .pricing{grid-template-columns:1fr}
+      .cards{grid-template-columns:repeat(2,1fr)}
+    }
+
+    @media (max-width:640px){
+      .topbar .container{gap:6px}
+      .btn{padding:.8rem 1rem}
+      .cards{grid-template-columns:1fr}
+      .kpis{gap:8px}
+      .kpi{width:100%}
+      .title{font-size:clamp(22px,7vw,34px)}
+      .subtitle{font-size:clamp(14px,4vw,17px)}
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Topbar -->
+  <div class="topbar" role="region" aria-label="Información de contacto">
+    <div class="container">
+      <div class="mini">📞 MTY (81) 0000 0000 · CDMX (55) 0000 0000 · <a href="mailto:soporte@consultoriagimex.com.mx" aria-label="Enviar correo a soporte">soporte@consultoriagimex.com.mx</a></div>
+      <div class="mini"><a class="btn ghost" href="#cotizar">Cotizar ahora</a></div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <nav class="container" aria-label="Principal">
+      <div class="brand">
+        <img src="https://static.thenounproject.com/png/449420-200.png" alt="Logo GIMEX" width="40" height="40" />
+        <strong>Consultoría GIMEX</strong>
+      </div>
+
+      <!-- Desktop actions -->
+      <div class="nav-actions" aria-hidden="true">
+        <a class="btn ghost" href="#beneficios">Beneficios</a>
+        <a class="btn ghost" href="#planes">Planes</a>
+        <a class="btn primary" href="#cotizar">Actualizar ahora</a>
+      </div>
+
+      <!-- Mobile toggle -->
+      <button class="nav-toggle" aria-controls="nav-panel" aria-expanded="false" aria-label="Abrir menú">
+        ☰ Menú
+      </button>
+    </nav>
+
+    <!-- Mobile panel -->
+    <div id="nav-panel" class="nav-panel" hidden>
+      <div class="container">
+        <a href="#beneficios">Beneficios</a>
+        <a href="#planes">Planes</a>
+        <a href="#demo">Solicitar demo</a>
+        <a class="btn primary" href="#cotizar">Actualizar ahora</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-wrap">
+      <div>
+        <span class="badge">Actualiza Aspel SAE · versión vigente</span>
+        <h1 class="title">Mantén tu empresa al día: <br> actualiza <span style="color:var(--brand-1)">Aspel SAE</span> y acelera tu operación</h1>
+        <p class="subtitle">Migra sin fricciones con nuestro acompañamiento end‑to‑end: diagnóstico, respaldo, implementación y soporte. Cumple normatividad y gana eficiencia operativa.</p>
+        <div class="kpis" role="list" aria-label="Beneficios clave">
+          <div class="kpi" role="listitem">⚡ Implementación guiada</div>
+          <div class="kpi" role="listitem">🧾 Timbrado listo</div>
+          <div class="kpi" role="listitem">🛡️ Soporte especializado</div>
+          <div class="kpi" role="listitem">📈 Reportes listos para BI</div>
+        </div>
+        <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn primary" href="#cotizar">Quiero actualizar</a>
+          <a class="btn ghost" href="#demo">Solicitar demo</a>
+        </div>
+      </div>
+      <div class="media-card">
+        <img alt="Mockup SAE" loading="lazy" src="https://images.unsplash.com/photo-1551281044-8af24c2c5b39?q=80&w=800&auto=format&fit=crop" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Beneficios -->
+  <section class="section" id="beneficios">
+    <div class="container">
+      <h2 class="title">El éxito también se administra</h2>
+      <p class="subtitle">Conecta ventas, compras, inventarios y finanzas. Centraliza tu operación y toma decisiones con datos.</p>
+      <div class="cards">
+        <article class="card">
+          <h3>Control 360° del ciclo de compra‑venta</h3>
+          <p class="muted">Inventarios, clientes, proveedores, cuentas por cobrar/pagar, compras y ventas en un solo lugar.</p>
+        </article>
+        <article class="card">
+          <h3>Sucursales bajo control</h3>
+          <p class="muted">Integra la operación de múltiples puntos de venta, en línea y en tiempo real.</p>
+        </article>
+        <article class="card">
+          <h3>Consultas y reportes accionables</h3>
+          <p class="muted">Búsquedas, filtros y estadísticas: productos más vendidos, clientes clave y periodos pico.</p>
+        </article>
+        <article class="card">
+          <h3>Automatización + cumplimiento</h3>
+          <p class="muted">Flujos eficientes y cumplimiento fiscal con emisión de CFDI 4.0.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Para quién es -->
+  <section class="section">
+    <div class="container grid-2">
+      <div>
+        <span class="badge">¿Para quién es?</span>
+        <h2 class="title">Diseñado para pymes y cadenas con múltiples sucursales</h2>
+        <p class="subtitle">Si necesitas control total de ventas, compras e inventarios, Aspel SAE es tu core administrativo.</p>
+        <ul class="list">
+          <li>
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M16.707 5.293a1 1 0 010 1.414l-7.5 7.5a1 1 0 01-1.414 0l-3-3A1 1 0 016.293 10.293l2.293 2.293 6.793-6.793a1 1 0 011.414 0z"/></svg>
+            Administración de compras y ventas con plantillas y envío automático por correo.
+          </li>
+          <li>
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M16.707 5.293a1 1 0 010 1.414l-7.5 7.5a1 1 0 01-1.414 0l-3-3A1 1 0 016.293 10.293l2.293 2.293 6.793-6.793a1 1 0 011.414 0z"/></svg>
+            Control de inventarios multi‑almacén y costeo por almacén.
+          </li>
+          <li>
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M16.707 5.293a1 1 0 010 1.414l-7.5 7.5a1 1 0 01-1.414 0l-3-3A1 1 0 016.293 10.293l2.293 2.293 6.793-6.793a1 1 0 011.414 0z"/></svg>
+            Facturación electrónica CFDI 4.0 con complementos.
+          </li>
+          <li>
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M16.707 5.293a1 1 0 010 1.414l-7.5 7.5a1 1 0 01-1.414 0l-3-3A1 1 0 016.293 10.293l2.293 2.293 6.793-6.793a1 1 0 011.414 0z"/></svg>
+            Interfaz con COI, BANCO, PROD y CAJA.
+          </li>
+        </ul>
+      </div>
+      <div class="shadow rounded" style="background:#fff">
+        <img alt="Reportes y tableros" loading="lazy" src="https://images.unsplash.com/photo-1551281044-8af24c2c5b39?q=80&w=1200&auto=format&fit=crop" style="width:100%;height:auto;border-radius:12px"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- Planes -->
+  <section class="section" id="planes">
+    <div class="container">
+      <h2 class="title">Contrata la versión vigente de Aspel SAE</h2>
+      <p class="subtitle">Selecciona la opción que mejor se ajusta a tu operación. Precios referenciales; personalizamos tu cotización.</p>
+      <div class="pricing">
+        <div class="price-card">
+          <strong class="badge">Actualización</strong>
+          <h3 style="margin:.6rem 0">Licencia de actualización</h3>
+          <div class="price">$12,xxx <small>MXN IVA incl.</small></div>
+          <div class="pc-body">
+            <ul class="list" style="margin-top:10px">
+              <li>Licencia electrónica</li>
+              <li>1 usuario · hasta 99 empresas</li>
+              <li>Asesoría previa a la migración</li>
+            </ul>
+          </div>
+          <a href="#cotizar" class="btn primary">Cotizar actualización</a>
+        </div>
+        <div class="price-card" style="border-width:2px;border-color:var(--brand-1)">
+          <strong class="badge">Usuario adicional</strong>
+          <h3 style="margin:.6rem 0">Usuario adicional actualización</h3>
+          <div class="price">$3,1xx <small>MXN IVA incl.</small></div>
+          <div class="pc-body">
+            <ul class="list" style="margin-top:10px">
+              <li>Licencia electrónica</li>
+              <li>1 usuario adicional</li>
+              <li>Asistencia en alta y activación</li>
+            </ul>
+          </div>
+          <a href="#cotizar" class="btn primary">Quiero este</a>
+        </div>
+        <div class="price-card">
+          <strong class="badge">Usuario nuevo</strong>
+          <h3 style="margin:.6rem 0">Usuario nuevo</h3>
+          <div class="price">$5,5xx <small>MXN IVA incl.</small></div>
+          <div class="pc-body">
+            <ul class="list" style="margin-top:10px">
+              <li>Licencia electrónica</li>
+              <li>1 usuario</li>
+              <li>Onboarding guiado</li>
+            </ul>
+          </div>
+          <a href="#cotizar" class="btn primary">Solicitar cotización</a>
+        </div>
+      </div>
+      <p class="muted" style="margin-top:10px">*Precios de referencia. Confirma versión y promoción vigente con nuestro equipo.</p>
+    </div>
+  </section>
+
+  <!-- Demo -->
+  <section class="section" id="demo">
+    <div class="container grid-2">
+      <div>
+        <h2 class="title">Solicita una demo guiada</h2>
+        <p class="subtitle">Conoce las diferencias entre versiones, flujos clave y buenas prácticas de migración sin interrumpir tu operación.</p>
+        <ul class="list">
+          <li>Comparativa de versiones</li>
+          <li>Buenas prácticas de respaldo</li>
+          <li>Checklist previo a la actualización</li>
+        </ul>
+        <div style="margin-top:16px">
+          <a class="btn primary" href="#cotizar">Agendar ahora</a>
+        </div>
+      </div>
+      <div class="shadow rounded" style="background:#fff">
+        <img alt="Demo guiada" loading="lazy" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop" style="width:100%;height:auto;border-radius:12px"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cotizador / Wizard -->
+  <section class="section" id="cotizar">
+    <div class="container">
+      <h2 class="title">¡Contrata ahora! <br><span style="font-weight:500">Lleva tu administración al siguiente nivel</span></h2>
+      <div class="wizard" role="region" aria-label="Formulario de cotización">
+        <div class="steps" id="steps"></div>
+        <form id="quoteForm" action="#" method="post" novalidate>
+          <!-- Paso 1: Contacto -->
+          <div class="pane active" data-step="Contacto">
+            <div class="form-row">
+              <div>
+                <label for="nombre">Nombre *</label>
+                <input id="nombre" name="nombre" required placeholder="Nombre(s)" autocomplete="given-name" />
+              </div>
+              <div>
+                <label for="apellidos">Apellidos *</label>
+                <input id="apellidos" name="apellidos" required placeholder="Primer y segundo apellido" autocomplete="family-name" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div>
+                <label for="celular">Celular *</label>
+                <input id="celular" name="celular" type="tel" required placeholder="55 0000 0000" inputmode="tel" autocomplete="tel-national" />
+              </div>
+              <div>
+                <label for="email">Email *</label>
+                <input id="email" name="email" type="email" required placeholder="tunombre@empresa.com" autocomplete="email" />
+              </div>
+            </div>
+            <div class="form-actions">
+              <span aria-hidden="true"></span>
+              <button class="btn primary" data-next>Siguiente</button>
+            </div>
+          </div>
+
+          <!-- Paso 2: Empresa -->
+          <div class="pane" data-step="Mi empresa">
+            <div class="form-row">
+              <div>
+                <label for="comercial">Nombre comercial *</label>
+                <input id="comercial" name="comercial" required autocomplete="organization" />
+              </div>
+              <div>
+                <label for="razon">Razón social *</label>
+                <input id="razon" name="razon" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div>
+                <label for="rfc">RFC *</label>
+                <input id="rfc" name="rfc" required />
+              </div>
+              <div>
+                <label for="estado">Estado *</label>
+                <input id="estado" name="estado" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div>
+                <label for="ciudad">Ciudad *</label>
+                <input id="ciudad" name="ciudad" required />
+              </div>
+              <div>
+                <label for="cp">Código Postal *</label>
+                <input id="cp" name="cp" required inputmode="numeric" autocomplete="postal-code" />
+              </div>
+            </div>
+            <div class="form-actions">
+              <button class="btn ghost" data-prev>Regresar</button>
+              <button class="btn primary" data-next>Siguiente</button>
+            </div>
+          </div>
+
+          <!-- Paso 3: Software -->
+          <div class="pane" data-step="Software">
+            <div class="form-row">
+              <div>
+                <label for="usuarios">Usuarios adicionales *</label>
+                <select id="usuarios" name="usuarios" required>
+                  <option value="">Selecciona</option>
+                  <option>0</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>10+</option>
+                </select>
+              </div>
+              <div>
+                <label for="modalidad">Modalidad de licenciamiento *</label>
+                <select id="modalidad" name="modalidad" required>
+                  <option value="">Selecciona</option>
+                  <option>Suscripción mensual</option>
+                  <option>Suscripción anual</option>
+                  <option>Licencia de actualización</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div>
+                <label for="tieneDesk">¿Cuentas con Escritorio de Servicios?</label>
+                <select id="tieneDesk" name="tieneDesk">
+                  <option>No</option>
+                  <option>Sí</option>
+                </select>
+              </div>
+              <div class="hide" id="credDesk">
+                <label for="usuarioDesk">Usuario (Escritorio de Servicios)</label>
+                <input id="usuarioDesk" name="usuarioDesk" />
+                <label for="passDesk" style="margin-top:6px;display:block">Password (Escritorio de Servicios)</label>
+                <input id="passDesk" name="passDesk" type="password" />
+              </div>
+            </div>
+            <div class="form-actions">
+              <button class="btn ghost" data-prev>Regresar</button>
+              <button class="btn primary" data-next>Siguiente</button>
+            </div>
+          </div>
+
+          <!-- Paso 4: Servicios -->
+          <div class="pane" data-step="Servicios">
+            <div class="form-row">
+              <div>
+                <label>¿Deseas incluir póliza de soporte?</label>
+                <div style="display:flex;gap:10px;flex-wrap:wrap">
+                  <label><input type="radio" name="poliza" value="si"> Sí</label>
+                  <label><input type="radio" name="poliza" value="no" checked> No</label>
+                </div>
+              </div>
+              <div>
+                <label>¿Deseas servicio de implementación?</label>
+                <div style="display:flex;gap:10px;flex-wrap:wrap">
+                  <label><input type="radio" name="impl" value="si"> Sí</label>
+                  <label><input type="radio" name="impl" value="no" checked> No</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button class="btn ghost" data-prev>Regresar</button>
+              <button class="btn primary" data-next>Siguiente</button>
+            </div>
+          </div>
+
+          <!-- Paso 5: Finalizar -->
+          <div class="pane" data-step="Finalizar">
+            <div class="form-row">
+              <div>
+                <label for="contacto">¿Cómo te gustaría ser contactado?</label>
+                <select id="contacto" name="contacto">
+                  <option>WhatsApp</option>
+                  <option>Llamada telefónica</option>
+                  <option>Correo electrónico</option>
+                </select>
+              </div>
+              <div>
+                <label for="comentarios">Comentarios adicionales</label>
+                <textarea id="comentarios" name="comentarios" placeholder="Cuéntanos brevemente tu caso (versiones, número de equipos, etc.)"></textarea>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button class="btn ghost" data-prev>Regresar</button>
+              <button class="btn primary" type="submit">Enviar solicitud</button>
+            </div>
+            <p class="muted" style="margin-top:10px">Al enviar, aceptas nuestro aviso de privacidad.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="section">
+    <div class="container" style="display:grid;grid-template-columns:1.2fr .8fr;gap:20px">
+      <div>
+        <h3 style="margin-top:0">Consultoría GIMEX</h3>
+        <p class="muted">Distribuidor certificado en soluciones Siigo Aspel. Acompañamos a pymes y emprendedores en su transformación administrativa y contable.</p>
+        <p class="muted">Contacto: <a href="mailto:contacto@consultoriagimex.com.mx">contacto@consultoriagimex.com.mx</a> · WhatsApp <a href="https://wa.me/5215512345678" target="_blank" rel="noopener">55 1234 5678</a></p>
+      </div>
+      <div>
+        <h4>Atención</h4>
+        <ul style="list-style:none;padding:0;margin:0;display:grid;gap:8px">
+          <li><a href="#cotizar">Cotizar actualización</a></li>
+          <li><a href="#planes">Ver planes</a></li>
+          <li><a href="#demo">Solicitar demo</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container" style="border-top:1px solid rgba(255,255,255,.12);margin-top:24px;padding-top:16px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px">
+      <small>© <span id="year"></span> Consultoría GIMEX S.A. de C.V. Todos los derechos reservados.</small>
+      <small>Desarrollado por GIMEX · Hecho con ❤️</small>
+    </div>
+  </footer>
+
+  <!-- WhatsApp FAB -->
+  <a href="https://wa.me/5215512345678" target="_blank" rel="noopener" aria-label="WhatsApp" style="position:fixed;right:18px;bottom:18px;background:#25D366;color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 20px rgba(0,0,0,.15);font-size:28px;text-decoration:none">💬</a>
+
+  <script>
+    // Año dinámico
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Navegación móvil
+    const toggle = document.querySelector('.nav-toggle');
+    const panel = document.getElementById('nav-panel');
+    const header = document.querySelector('header');
+    toggle.addEventListener('click', () => {
+      const open = panel.hasAttribute('hidden') ? false : true;
+      panel.toggleAttribute('hidden');
+      panel.style.display = panel.hasAttribute('hidden') ? 'none' : 'block';
+      toggle.setAttribute('aria-expanded', String(!open));
+      // ensure panel sits under header
+      panel.style.top = header.offsetHeight + 'px';
+    });
+
+    // Cerrar el panel al navegar (mejora UX móvil)
+    panel.addEventListener('click', (e) => {
+      if(e.target.matches('a')){
+        panel.setAttribute('hidden', '');
+        panel.style.display = 'none';
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    // Wizard logic
+    const panes = Array.from(document.querySelectorAll('.pane'));
+    const stepsEl = document.getElementById('steps');
+    const form = document.getElementById('quoteForm');
+    let idx = 0;
+
+    const renderSteps = () => {
+      stepsEl.innerHTML = panes.map((p, i) => {
+        const active = i === idx ? 'step active' : 'step';
+        return `<div class="${active}"><span>${i+1}</span>${p.dataset.step}</div>`;
+      }).join('');
+    };
+
+    const show = (i) => {
+      idx = i;
+      panes.forEach((p, k) => p.classList.toggle('active', k === idx));
+      renderSteps();
+      // Offset scroll to keep step title visible under sticky header
+      const y = document.getElementById('cotizar').offsetTop - (header.offsetHeight + 10);
+      window.scrollTo({top: y, behavior: 'smooth'});
+    };
+
+    document.addEventListener('click', (e) => {
+      if (e.target.matches('[data-next]')) {
+        e.preventDefault();
+        // Validación ligera: inputs required en el pane actual
+        const required = panes[idx].querySelectorAll('[required]');
+        for (const r of required) {
+          const emptySelect = (r.tagName === 'SELECT' && !r.value);
+          if (!r.value || emptySelect) {
+            r.focus();
+            r.style.borderColor = '#EF4444';
+            r.setAttribute('aria-invalid', 'true');
+            return;
+          } else {
+            r.style.borderColor = 'var(--line)';
+            r.removeAttribute('aria-invalid');
+          }
+        }
+        if (idx < panes.length - 1) show(idx + 1);
+      }
+      if (e.target.matches('[data-prev]')) {
+        e.preventDefault();
+        if (idx > 0) show(idx - 1);
+      }
+    });
+
+    // Toggle credenciales Escritorio de Servicios
+    const tieneDesk = document.getElementById('tieneDesk');
+    const credDesk = document.getElementById('credDesk');
+    tieneDesk.addEventListener('change', () => {
+      const showCred = tieneDesk.value === 'Sí';
+      credDesk.classList.toggle('hide', !showCred);
+    });
+
+    // Submit (placeholder)
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      // TODO: Reemplaza con tu endpoint (Zapier, RD Station, Google Apps Script, Shopify, etc.)
+      alert('¡Gracias! Hemos recibido tu solicitud. Un asesor te contactará en breve por el medio seleccionado.');
+      form.reset();
+      show(0);
+    });
+
+    // Initial render
+    renderSteps();
+  </script>
+</body>
+</html>
